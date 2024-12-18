@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(33, 35, 35);
+}
+
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    font-size: 13em;
+    text-align: center;
+    animation-name:slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out;/*ease-in-out , linear, steps(6)*/
+}
+
+
+img{
+    animation-name:slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out;/
+}
+/* #box:hover{
+    animation-name:glow ;
+    animation-duration: 2s;
+} */
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(300%);
+    }
+}
+
+@keyframes slideRight{
+    to{
+        transform: translateX(300%);
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY(300%);
+    }
+}
+
+@keyframes slideDown{
+    to{
+        transform: translateY(300%);
+    }
+}
+
+@keyframes rotate{
+    25%{transform: rotateZ(360deg);}
+}
+
+@keyframes grow{
+    50%{transform: scale(2, 2);}
+}
+
+@keyframes shrink{
+    50%{transform: scale(0.5, 0.5);}
+}
+
+@keyframes fade{
+    100%{opacity: 1;}
+}
+
+@keyframes colorChange{
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: rgb(201, 229, 22);}
+    60%{background-color: rgb(11, 165, 54);}
+    80%{background-color: rgb(12, 17, 155);}
+    100%{background-color: rgb(95, 6, 107);}
+}
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px rgb(132, 132, 52);}
+}

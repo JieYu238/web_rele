@@ -1,0 +1,27 @@
+/* li:hover{
+    background-color: hsl(60, 77%, 46%);
+}
+li:not(:hover){
+    background-color: hsl(0, 2%, 33%);
+} */
+
+/* li:nth-child(even){
+    background-color: hsl(60, 79%, 49%);
+}
+
+li:nth-child(3n){
+    background-color: hsl(60, 79%, 49%);
+} */
+
+/* li:nth-child(4n+1){
+    background-color: hsl(60, 79%, 49%);
+} */
+
+#greeting p{
+    background-color: rgb(31, 114, 197);
+    padding:10px;
+    display:none;
+}
+#greeting:hover p{
+    display:inline;
+}
