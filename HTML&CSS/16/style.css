@@ -1,0 +1,13 @@
+div{
+    background-color: hsl(0, 52%, 48%);
+    width:100px;
+    height:100px;
+    display:block;/*block, inline,inline-block, none*/
+    /* visibility: hidden; */
+}
+span{
+    background-color: hsl(240, 55%, 53%);
+    width:100px;
+    height:100px;
+    display: inline;
+}

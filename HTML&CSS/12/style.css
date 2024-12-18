@@ -1,0 +1,10 @@
+h1{
+    text-shadow: 3px 3px 5px hsl(0, 54%, 45%), -3px -3px 5px hsl(244, 57%, 48%);/*horizontal vertical blur*/
+
+}
+#box1{
+    width: 100px;
+    height:100px;
+    background-color: rgb(217, 212, 212);
+    box-shadow: 3px 3px 5px;
+}

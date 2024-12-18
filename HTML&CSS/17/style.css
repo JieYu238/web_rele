@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: hsl(0, 4%, 16%);
+    height: 100vh; /*means viewpoint height*/
+}
+
+.box{
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    padding: 10px;
+    height: auto;
+    width: 50%;/*50%, 200px, auto*/
+    float: left;
+    text-align: center;
+
+    /* max-height, min-height, min-width */
+    min-height: 50%;
+}
