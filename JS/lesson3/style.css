@@ -1,7 +1,90 @@
-body{
+/* body{
     font-family: Verdana;
     font-size: 1em;
 }
 #mySubmit{
     font-size: 1em;
+} */
+
+/* body{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 4%, 95%);
+}
+
+h1{
+    color:rgb(45, 20, 206);
+}
+
+form{
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    max-width: 350px;
+    margin:auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px hsl(0, 0%, 0%, 0.3);
+}
+
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid hsla(0, 0%, 0%, 0.809);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: hsla(0, 100%, 60%);
+    color:white;
+    font-size:1.5em;
+    border: none;
+    padding:10px 15px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: hsla(0, 100%, 50%); 
+}
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+} */
+
+
+#container{
+    font-family:Verdana;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border:none;
+    background-color: hsl(240, 65%, 55%);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(240, 65%, 65%);
+}
+input{
+    font-size: 2rem;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+#diceResult{
+    margin:25px;
+}
+#diceImages img{
+    width:150px;
+    margin:5px;
 }
