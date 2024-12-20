@@ -325,17 +325,239 @@
 
 
 //dice roller
-function rollDice(){
-    const numOfDice = document.getElementById("numOfDice").value;
-    const diceResult = document.getElementById("diceResult");
-    const diceImages = document.getElementById("diceImages");
-    const values = [];
-    const images = [];
-    for(let i = 0; i < numOfDice; i++){
-        const value = Math.floor(Math.random() * 6) +1;
-        values.push(value);
-        images.push(`<img src="dice_images/dice${value}.png" alt="Dice ${value}">`);
-    }
-    diceResult.textContent = `dice: ${values.join(`, `)}`;
-    diceImages.innerHTML = images.join(``);
-}
+// function rollDice(){
+//     const numOfDice = document.getElementById("numOfDice").value;
+//     const diceResult = document.getElementById("diceResult");
+//     const diceImages = document.getElementById("diceImages");
+//     const values = [];
+//     const images = [];
+//     for(let i = 0; i < numOfDice; i++){
+//         const value = Math.floor(Math.random() * 6) +1;
+//         values.push(value);
+//         images.push(`<img src="dice_images/dice${value}.png" alt="Dice ${value}">`);
+//     }
+//     diceResult.textContent = `dice: ${values.join(`, `)}`;
+//     diceImages.innerHTML = images.join(``);
+// }
+
+
+
+
+//RANDOM PASSWORD GENERATOR
+// function  generatePassword(length, includeLowercase,includeUppercase, includeNumbers, includeSymbols){
+//     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+//     const uppercaseChars ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     const numberChars= "0123456789";
+//     const symbolChars = "!@#$%^&*()_+=|?><:;~";
+//     let allowedChars = "";
+//     let password = "";
+//     allowedChars += includeLowercase?lowercaseChars:"";
+//     allowedChars += includeUppercase?uppercaseChars:"";
+//     allowedChars += includeNumbers?numberChars:"";
+//     allowedChars += includeSymbols?symbolChars:"";
+//     if(length <= 0){
+//         return `(password length must be at least 1)`;
+//     }
+//     if(allowedChars.length === 0){
+//         return `(At least 1 set of character needs to be selected)`;
+//     }
+//     for(let i = 0; i < length; i++){
+//         const randomIndex = Math.floor(Math.random() * allowedChars.length);
+//         password += allowedChars[randomIndex];
+//     }
+//     return password;
+// }
+// const passwordLength = 12;
+// const includeLowercase = true;
+// const includeUppercase = true;
+// const includeNumbers = true;
+// const includeSymbols = true;
+
+// passwordResult.textContent = generatePassword(passwordLength, includeLowercase,includeUppercase, includeNumbers, includeSymbols);
+// const passwordResult = document.getElementById("passwordResult");
+// const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+// const uppercaseChars ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// const numberChars= "0123456789";
+// const symbolChars = "!@#$%^&*()_+=|?><:;~";
+// let totalChars = lowercaseChars + uppercaseChars + numberChars + symbolChars;
+// document.getElementById("generatePassword").onclick = function(){
+//     passwordResult.textContent = "";
+//     let password = "";
+//     const numOfPassword = document.getElementById("numOfPassword").value;
+//     for(let i = 0; i < numOfPassword; i++){
+//         let randomIndex = Math.floor(Math.random()*totalChars.length);
+//         password += totalChars[randomIndex];
+//     }
+//     passwordResult.textContent = `password: ${password}`;
+// }
+
+
+//call back = a function that is passed as an argument to another function
+// // used to :
+// // reading a File
+// // network requests
+// // interacting with databases
+// sum(displayPage, 1, 5);
+// function sum(callback, x, y){
+//     let result = x + y;
+//     callback(result);
+// }
+// function displayResult(result){
+//     console.log(result);
+// }
+// function displayPage(result){
+//     document.getElementById("myH1").textContent = result;
+// }
+
+
+
+//forEach()
+//array.forEach(callback)
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.forEach(display);
+// numbers.forEach(double);
+// function double(element, index, array){
+//     array[index] = element * 2;
+// }
+// function display(element){
+//     console.log(element);
+// }
+// let fruits = ["apple", "orange", "banana", "coconut"];
+// fruits.forEach(capitalize);
+// fruits.forEach(display);
+// function upperCase(element, index, array){
+//     array[index] = element.toUpperCase();
+// }
+// function capitalize(element, index, array){
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+// }
+// function display(element){
+//     console.log(element);
+// }
+
+
+
+//.map() = accepts a callback and applies that function to each element of an array, then return a new array
+// const numbers = [1, 2, 3, 4, 5];
+// const squares = numbers.map(square);
+// console.log(squares);
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+// const students = ["Bob", "Mary", "Lily", "Mario"];
+// const studentUpper = students.map(upperCase);
+// console.log(studentUpper);
+// function upperCase(element){
+//     return element.toUpperCase();
+// }
+// const dates=["2024-1-30", "2025-2-30", "2026-3-30"];
+// const formattedDates = dates.map(formatDates);
+// console.log(formattedDates);
+// function formatDates(element){
+//     const parts = element.split("-");
+//     return `${parts[1]}/${parts[2]}/${parts[0]}`;
+// }
+
+
+
+//.filter() = creates a new array by filtering out elements
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let evenNums = numbers.filter(isEven);
+// console.log(evenNums);
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+// const ages = [16, 17, 18, 19, 20, 60];
+// const adults = ages.filter(isAdult);
+// console.log(adults);
+// function isAdult(element){
+//     return element >= 18;
+// }
+
+
+
+
+//.reduce() = reduce the elements of an array to a single value
+// const prices = [5, 30, 10, 25, 15, 20];
+// const total = prices.reduce();
+// console.log(`$${total}`)
+// function sum(previous, next){
+//     return previous + next;
+// }
+// const grades = [78, 56, 98, 77, 97, 77];
+// const maximum = grades.reduce(getMax);
+// console.log(maximum);
+// function getMax(accumulator, element){
+//     return Math.max(accumulator, element);
+// }
+
+
+
+//-------function declaration
+// function hello(){
+//     console.log("hello");
+// }
+// hello();
+// ------function expressions
+// const greeting = function(){
+//     console.log("hello~hello");
+// }
+// //setTimeout(callback, 3000);
+// // setTimeout(greeting, 3000);
+// setTimeout(function(){
+//     console.log("Goodbye")
+// }, 3000);
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const squares = numbers.map(function(element){
+//     return Math.pow(element, 2);
+// })
+// console.log(squares);
+
+
+
+
+
+//--------function expression used in 
+//  1. Callbacks in asynchronous operations
+//  2. Higher-Order Functions
+//  3. Closures
+//  4. Event Listeners
+
+
+
+
+//--------arrow functions
+    // a concise way to write function expressions good for simple functions that you use only once (parameter) => some code
+// const hello = function(){
+//     console.log("hello");
+// }
+// hello();
+// const goodbye = (name) => console.log(`Goodbye, ${name}`);
+// goodbye("Bro");
+// const numbers = [1,2,3,4,5,6];
+// const squares = numbers.map((element) => Math.pow(element, 2));
+// console.log(squares);
+
+
+
+//----------object
+    //object = {key:value, function()};
+const person1 = {
+    firstName:"Bob", 
+    lastName:"Mario",
+    age: 30,
+    isEmployed: true,
+    sayHello:function(){console.log("Hi! I am Bob!")},
+    eat:function(){console.log("I am eating pizza")},
+};
+const person2 = {
+    firstName:"Mary", 
+    lastName:"Li",
+    age: 10,
+    isEmployed: false,
+    sayHello:function(){console.log("Hi! I am Mary!")},
+    eat:() => console.log("I am eating noodles"),
+};
+console.log(person1.age);
+person1.sayHello();
+person2.eat();
