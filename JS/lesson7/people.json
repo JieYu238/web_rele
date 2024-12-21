@@ -1,0 +1,23 @@
+[
+    {
+        "name":"Bob",
+        "age":30,
+        "isEmployed":true
+    },
+    {
+        "name":"Patrick",
+        "age":33,
+        "isEmployed":true
+    },
+    {
+        "name":"Lily",
+        "age":38,
+        "isEmployed":true
+    },
+    {
+        "name":"Mary",
+        "age":30,
+        "isEmployed":false
+    }
+
+]
