@@ -1,0 +1,176 @@
+/* body{
+    margin:0;
+}
+#myBox{
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+} */
+
+
+/* #myBtn{
+    font-size: 2rem;
+} */
+
+/* .myBtn{
+    font-size: 4rem;
+    margin:10px;
+    border:none;
+    border-radius: 5px;
+    padding:10px 15px;
+    background-color: hsl(240, 100%, 66%);
+    color:white;
+} */
+/* #myH1{
+    font-size: 5rem;
+} */
+/* .myBtns{
+    font-size: 4rem;
+    margin: 10px;
+    border:none;
+    border-radius: 5px;
+    padding:10px 15px;
+}
+.enabled{
+    background-color: hsl(240, 100%, 63%);
+    color:white;
+}
+.hover{
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.18);
+    font-weight: bold;
+}
+.disabled{
+    background-color: hsl(0, 1%, 61%);
+    color:hsl(0, 0%, 80%);
+} */
+/* body{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
+    color:hsl(0, 0%, 20%);
+}
+.choices{
+    margin-bottom:30px;
+}
+.choices button{
+    font-size: 5rem;
+    min-width: 100px;
+    margin:0 10px;
+    border-radius: 250px;
+    background-color: hsl(207, 76%, 45%);
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+}
+.choices button:hover{
+    background-color: hsl(207, 76%, 65%);
+}
+#playerDisplay, #computerDisplay{
+    font-size: 1.2rem;
+}
+#resultDisplay{
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.scoreDisplay{
+    font-size: 1rem;
+}
+.greenText, #playerScoreDisplay{
+    color:hsl(120, 100%, 25%);
+}
+.redText, #ComputerScoreDisplay{
+    color:hsl(0, 100%, 50%);
+} */
+
+/* body{
+    font-family:"Mukta Mahee", serif;
+    font-weight: bold;
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    color:hsl(0, 0%, 20%);
+}
+.choices{
+    margin-bottom: 30px;
+}
+.choices img{
+    max-width: 130px;
+    border: 5px solid hsla(0, 0%, 0%, 0.682);
+    border-radius: 250px;
+    background-color: hsl(212, 75%, 48%);
+    margin:0 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.choices img:hover{
+    background-color: hsl(269, 55%, 66%);
+}
+#player, #computer{
+    font-size: 1rem;
+}
+#playerChoiceDisplay, #computerChoiceDisplay{
+    display:none;
+}
+#resultDisplay{
+    font-size: 3rem;
+}
+.greenText, #playerScoreDisplay{
+    color:hsl(120, 100%, 25%);
+}
+.redText, #computerScoreDisplay{
+    color:hsl(0, 100%, 50%);
+} */
+
+
+
+.slider{
+    position:relative;
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    height:300px;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.518);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left:0;
+}
+.next{
+    right:0;
+}
+@keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1}
+}
